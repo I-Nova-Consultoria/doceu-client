@@ -1,17 +1,18 @@
+require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
+const fs = require('fs')
+const bodyParser = require('body-parser')
+
+const routes = require('./routes')
 
 const app = express();
 
-app.get('/api/customers', cors(), (req, res) => {
-  const customers = [
-    {id: 1, firstName: 'John', lastName: 'Doe'},
-    {id: 2, firstName: 'Brad', lastName: 'Traversy'},
-    {id: 3, firstName: 'Mary', lastName: 'Swanson'},
-  ];
+app.use(express.json())
+app.use(cors())
+app.use(bodyParser.urlencoded({extended: false}))
 
-  res.json(customers);
-});
+app.use('/api', routes)
 
 const port = 5000;
 
