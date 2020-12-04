@@ -23,6 +23,9 @@
     "express": "^4.16.2",
     "firebase": "^8.1.1",
     "firebase-admin": "^9.4.1",
+    "mysql": "^2.18.1",
+    "pg": "^8.5.1",
+    "psql": "0.0.1",
     "react-bootstrap": "^1.4.0",
     "styled-components": "^5.2.1"
   }

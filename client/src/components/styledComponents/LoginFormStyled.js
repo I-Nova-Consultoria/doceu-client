@@ -9,6 +9,8 @@ export const Form1 = styled.div`
     padding:40px;      
     text-align: center;
     opacity: 0.7;
+    position: absolute;
+    top: 10%;
    
 
 
@@ -49,6 +51,8 @@ export const H11 = styled.h1`
     text-align: center;
 `
 
-export const Btn1 = styled.input`
-
+export const Btn1 = styled.button`
+    background-color: white;
+    width: 120px;
+    height: 40px;
 `
